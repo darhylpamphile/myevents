@@ -16,12 +16,26 @@
             </nav>
         </header>
 
+         <section class="hero">
+            <h2>Informations à propos des évènements</h2>
+            <p>
+                Ici vous trouverez tous les évènements accompagnés des
+                principales informations
+            </p>
+        </section>
+        <br />
+
+        <div id="entree">
+            <input type="text" placeholder="Rechercher ce qui vous interesse" />
+        </div>
+
         <!-- FILTRES -->
         <section class="filtres">
             <button class="filtre actif" data-type="tous">Tous</button>
             <button class="filtre" data-type="culturel">Culturel</button>
             <button class="filtre" data-type="sportif">Sportif</button>
             <button class="filtre" data-type="academique">Académique</button>
+            <button class="filtre" data-type="social">Socio-politique</button>
         </section>
 
         <!-- LISTE ÉVÉNEMENTS -->
@@ -32,6 +46,14 @@
                 <p>📍 Champ de Mars, Port-au-Prince</p>
                 <p>🎭 Culturel</p>
                 <a href="detail.html">Voir détails</a>
+            </div>
+
+            <div class="carte" data-type="social">
+                <h4>Journée de débat sur la crise sécuritaire en Haïti</h4>
+                <p>📅 18 mai 2026</p>
+                <p>📍 Karibe hôtel</p>
+                <p>🧠 Socio-politique</p>
+                <a href="detail.html">Voir details</a>
             </div>
 
             <div class="carte" data-type="sportif">
