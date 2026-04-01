@@ -3,31 +3,53 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>MyEvents - Détail</title>
+        <meta name="description" content="Détails complets des événements MyEvents en Haïti. Découvrez les dates, heures, lieux et descriptions de nos événements culturels, sportifs et académiques." />
+        <meta name="keywords" content="événements, Haïti, Port-au-Prince, concerts, festivals, sports" />
+        <title>MyEvents - Détail de l'Événement</title>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <!-- HEADER -->
         <header>
             <h1>MyEvents</h1>
-            <nav>
-                <a href="index.html">Accueil</a>
-                <a href="evenements.html">Événements</a>
+            <nav aria-label="Navigation principale">
+                <a href="index.html" aria-label="Accueil">Accueil</a>
+                <a href="evenements.html" aria-label="Liste des événements">Événements</a>
             </nav>
         </header>
 
-        <!-- DÉTAIL -->
-        <section class="detail">
-            <a href="evenements.html" class="btn-retour">← Retour</a>
+        <!-- MAIN CONTENT -->
+        <main class="detail" role="main">
+            <a href="evenements.html" class="btn-retour" aria-label="Retourner à la liste des événements">← Retour</a>
 
-            <div class="detail-carte">
+            <article class="detail-carte">
                 <h2>Festival de Jazz de Port-au-Prince</h2>
-                <p class="detail-type">🎭 Culturel</p>
-                <hr />
-                <p>📅 <strong>Date :</strong> 20 Avril 2025</p>
-                <p>🕐 <strong>Heure :</strong> 18h00</p>
-                <p>📍 <strong>Lieu :</strong> Champ de Mars, Port-au-Prince</p>
-                <hr />
+                <p class="detail-type">
+                    <span aria-hidden="true">🎭</span>
+                    <span class="sr-only">Icône</span> Culturel
+                </p>
+                <div class="divider"></div>
+                <dl class="detail-info">
+                    <dt class="sr-only">Date de l'événement</dt>
+                    <dd>
+                        <span aria-hidden="true">📅</span>
+                        <span class="sr-only">Date :</span>
+                        <strong>Date :</strong> <span class="detail-date">20 Avril 2025</span>
+                    </dd>
+                    <dt class="sr-only">Heure de l'événement</dt>
+                    <dd>
+                        <span aria-hidden="true">🕐</span>
+                        <span class="sr-only">Heure :</span>
+                        <strong>Heure :</strong> <span class="detail-heure">18h00</span>
+                    </dd>
+                    <dt class="sr-only">Lieu de l'événement</dt>
+                    <dd>
+                        <span aria-hidden="true">📍</span>
+                        <span class="sr-only">Lieu :</span>
+                        <strong>Lieu :</strong> <span class="detail-lieu">Champ de Mars, Port-au-Prince</span>
+                    </dd>
+                </dl>
+                <div class="divider"></div>
                 <p class="detail-description">
                     Le Festival de Jazz de Port-au-Prince est l'un des
                     événements culturels les plus attendus de l'année. Une
@@ -35,12 +57,12 @@
                     internationaux dans un cadre exceptionnel au coeur de la
                     capitale.
                 </p>
-            </div>
-        </section>
+            </article>
+        </main>
 
         <!-- FOOTER -->
         <footer>
-            <p>© 2025 MyEvents — Haïti</p>
+            <p>© 2026 MyEvents — Haïti</p>
             <p>
                 Tous droits réservés<br />
                 Préparé par PAMPHILE Darhyl Spencer
@@ -48,6 +70,5 @@
         </footer>
         
         <script src="script.js"></script>
-        <script>afficherDetail();</script>
     </body>
 </html>
