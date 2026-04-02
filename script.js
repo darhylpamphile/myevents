@@ -54,20 +54,12 @@ function afficherDetail() {
     });
 
     if (evenement) {
-        document.querySelector(".detail-carte h2").textContent =
-            evenement.titre;
-        document.querySelector(".detail-type").textContent =
-            evenement.emoji + "" + evenement.type;
-        document.querySelector(".detail-description").textContent =
-            evenement.description;
-
-        const paragraphes = document.querySelectorAll(".detail-carte p");
-        paragraphes[1].innerHTML =
-            "📅 <strong>Date :</strong> " + evenement.date;
-        paragraphes[2].innerHTML =
-            "🕐 <strong>Heure :</strong> " + evenement.heure;
-        paragraphes[3].innerHTML =
-            "📍 <strong>Lieu :</strong> " + evenement.lieu;
+        document.querySelector('.detail-carte h2').textContent = evenement.titre;
+        document.querySelector('.detail-type').innerHTML = '<span aria-hidden="true">' + evenement.emoji + '</span> ' + evenement.type;
+        document.querySelector('.detail-date').textContent = evenement.date;
+        document.querySelector('.detail-heure').textContent = evenement.heure;
+        document.querySelector('.detail-lieu').textContent = evenement.lieu;
+        document.querySelector('.detail-description').textContent = evenement.description;
     }
     }
 
