@@ -37,12 +37,25 @@ const evenements = [
         titre: "Conférence sur l'Entrepreneuriat",
         type: "Académique",
         emoji: "🎓",
-        date: "2 Mai 2025",
+        date: "2 Mai 2026",
         heure: "09h00",
         lieu: "Pétion-Ville",
         description:
             "Une conférence réunissant les entrepreneurs haïtiens les plus influents pour partager leurs expériences et conseils aux jeunes."
-    }
+    },
+    {
+        id: 5,
+        titre: "Vèvè Haïti",
+        type: "Culturel",
+        emoji: "🎭",
+        date: "26 avril 2026",
+        heure: "9h00",
+        lieu: "Petion-ville",
+        description: ""
+    },
+    {
+        id: 6,
+        titre:
 ];
 
 function afficherDetail() {
