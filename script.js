@@ -55,7 +55,24 @@ const evenements = [
     },
     {
         id: 6,
-        titre:
+        titre: "Retraite spirituelle et environnementale",
+        type: "Culturel",
+        emoji: "🎭",
+        date: "3 et 4 avril 2026",
+        heure: "9h30",
+        lieu: "Petion-ville",
+        description: ""
+    },
+    {
+        id: 7,
+        titre: "Conférence d'honneur et mérite à 25 jeunes ",
+        type: "Académique",
+        emoji: "🎓",
+        date: "8 novembre 2026",
+        heure: "14h00",
+        lieu: "Juvénat, Petion-ville",
+        description: ""
+    }
 ];
 
 function afficherDetail() {
